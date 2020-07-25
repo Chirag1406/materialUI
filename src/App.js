@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import DisabledTabs from './components/Tab';
+import ControlledOpenSelect from './components/Select';
+import ErrorRadios from './components/Radio';
+import MediaCard from './components/Cards';
+import Button from './components/Button';
+
+
+ 
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+<DisabledTabs/>
+<MediaCard/>
+<ControlledOpenSelect/>
+<ErrorRadios/>
+<Button/>
+
     </div>
   );
 }
